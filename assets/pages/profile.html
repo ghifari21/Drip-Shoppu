@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Drip Shoppu</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+
+    <!-- cdn links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <div class="menu-btn">
+        <div class="burger-btn"></div>
+      </div>
+
+      <ul>
+        <li>
+          <div class="container">
+            <div class="user">
+              <p>
+                <a href="./profile.html"><i class="bi bi-person-circle"></i> Hi! <span class="name"></span> </a>
+              </p>
+              <button class="logout btn btn-danger">
+                <i class="bi bi-box-arrow-left"></i>
+                Logout
+              </button>
+              <button class="cart btn btn-success">
+                <a href="cart-and-order.html">
+                  <i class="bi bi-cart4"></i>
+                  Cart</a
+                >
+              </button>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-search"></i> Search</button>
+            </div>
+            <div class="menu-btn">
+              <div class="burger-btn"></div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="./best-seller.html">Best Seller</a>
+        </li>
+        <li>
+          <a href="./air-jordan.html">Air Jordan</a>
+        </li>
+        <li>
+          <a href="./air-force.html">Air Force</a>
+        </li>
+        <li>
+          <a href="./supreme.html">Supreme</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="./about.html">About Us</a>
+        </li>
+      </ul>
+
+      <div class="logo">
+        <a href="../../index.html">
+          <img src="../img/logo.png" alt="Logo" />
+          <h4>Drip Shoppu</h4>
+        </a>
+      </div>
+
+      <div></div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Search Product</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" id="searchBarInput" onkeyup="searchBar()" type="search" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" />
+            <ul id="searchBarList" class="list-group">
+              <!-- air jordan -->
+              <li class="list-group-item">
+                <a href="./productPages/aj1-satin-black-toe.html">Air Jordan 1 High Satin Black Toe</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/aj1-tokyo-biohack.html">Air Jordan 1 High Tokyo Biohack</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/aj1-bred-patent.html">Air Jordan 1 High Bred Patent</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/aj1-university-blue.html">Air Jordan 1 High University Blue</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/aj1-chile-red.html">Air Jordan 1 Mid Chile Red</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/aj1-fragment-travis-scott.html">Air Jordan 1 Low Fragment x Travis Scott</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/aj1-dark-mocha.html">Air Jordan 1 High Dark Mocha</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/aj1-obsidian-unc.html">Air Jordan 1 High Obsidian Unc</a>
+              </li>
+              <!-- air force -->
+              <li class="list-group-item">
+                <a href="./productPages/af1-triple-white.html">Air Force 1 Low Triple White</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/af1-travis-scott.html">Travis Scott x Air Force 1 Low Cactus Jack</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/af1-peaceminusone.html">Peaceminusone x Air Force 1 Low Paranoise 2.0</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/af1-supreme-black.html">Supreme x Air Force 1 Low Black</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/af1-stussy-triple.html">Air Force 1 Low x Stussy Triple</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/af1-undftd.html">Undftd x Air Force 1 Low Sp 5 On It</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/af1-experimental-halloween.html">Air Force 1 Low Experimental Halloween</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/af1-cosmic-clay.html">Air Force 1 1/1 Low Cosmic Clay</a>
+              </li>
+              <!-- supreme -->
+              <li class="list-group-item">
+                <a href="./productPages/supreme-hoodie-cross-box-logo.html">Sup. Hoodie Cross Box Logo Black</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/supreme-thrshr-hooded.html">Sup. Thrshr Hooded Sweatshirt Black</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/supreme-thrsr-multi-logo.html">Sup. Thrshr Multi Logo L/S Tee Black</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/supreme-waist-bag-black.html">Sup. Waist Bag 'Black'</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/supreme-utility-tote-bag.html">Sup. Utility Tote Bag (FW21) Black</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/supreme-cups.html">Sup. Stacking Cups (Set of 4) Red</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/supreme-hanging-lantern.html">Sup. Hanging Lantern Red</a>
+              </li>
+              <li class="list-group-item">
+                <a href="./productPages/supreme-deck-black.html">Sup. Deck Black</a>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal End -->
+
+    <!-- about start -->
+    <div class="card mx-auto mt-5 shadow py-4" style="width: 80%">
+      <div class="card-body">
+        <h2 class="card-title text-center fw-bold mb-4">Profile</h2>
+        <div class="table-responsive-md">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" class="w-25">Username</th>
+                <td>: <span class="uname"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">First Name</th>
+                <td>: <span class="fname"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Surname</th>
+                <td>: <span class="sname"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Email</th>
+                <td>: <span class="emailaddr"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Phone</th>
+                <td>: <span class="phonenumber"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- about end -->
+
+    <div class="container invisible">
+      Ex proident exercitation Lorem in quis elit eiusmod deserunt esse amet tempor. Dolore officia ut consectetur nulla exercitation. Amet consectetur irure enim culpa magna id adipisicing. Esse anim duis occaecat duis. Ut officia quis
+      duis irure elit tempor nulla irure cillum aliquip. Magna incididunt id officia eu. Dolor anim mollit velit elit id. Ut sint nulla culpa dolore dolore. Tempor in commodo ullamco in laboris. Irure nostrud eu dolore magna cillum fugiat
+      dolor incididunt do nostrud fugiat ea ad. In nulla nulla duis aliquip eu aliquip. Elit eiusmod consequat et ea cillum exercitation enim ea ullamco reprehenderit occaecat cillum quis irure. Ad fugiat amet excepteur voluptate enim
+      reprehenderit elit minim id anim adipisicing qui magna.Pariatur ea ea quis duis ipsum laborum commodo irure. Et cillum culpa eiusmod ullamco esse. Officia consequat excepteur cupidatat qui sint aliqua exercitation anim. Eu culpa
+      occaecat eu nulla officia Lorem magna sint non.Sunt aute tempor nulla commodo veniam Lorem.Sit veniam irure ut irure aliqua eiusmod fugiat veniam in cillum tempor laboris.Nostrud et ex velit ullamco amet sunt.
+    </div>
+
+    <!-- footer start -->
+    <footer class="footer py-3 mt-5 text-center">
+      <div class="container d-flex justify-content-center">
+        <div class="row text-start">
+          <div class="col-md-4">
+            <ul>
+              <li class="fw-bold">Shop</li>
+              <li>
+                <a href="./best-seller.html">Best Seller</a>
+              </li>
+              <li>
+                <a href="./air-jordan.html">Air Jordan</a>
+              </li>
+              <li>
+                <a href="./air-force.html">Air Force</a>
+              </li>
+              <li>
+                <a href="./supreme.html">Supreme</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li class="fw-bold">Company</li>
+              <li>
+                <a href="./contact.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="./about.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li class="fw-bold">Stay Connected</li>
+              <li>
+                <a href="https://facebook.com/ghifari25" target="_blank">
+                  <i class="fab fa-facebook-f me-2"></i>
+                </a>
+                <a href="https://instagram.com/ghifari2112" target="_blank">
+                  <i class="fab fa-instagram me-2"></i>
+                </a>
+                <a href="https://github.com/ghifari21" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col">
+            <span><a href="https://www.instagram.com/ghifari2112/" target="_blank">&copy; 2022 Ghifari Octaverin | 2000952</a></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="../js/navbar.js"></script>
+    <script src="../js/profile.js"></script>
+    <script src="../js/loginInfo.js"></script>
+  </body>
+</html>
